@@ -1,9 +1,11 @@
+/* Name - AMIT GURUNG */
+/* The CSS ASSIGNMENT - 3 */
+
 /* Global Styles */
-
-
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px width */
     h1 {
         font-size: 28px;
     }
@@ -17,11 +19,12 @@
     }
 
     main {
-        padding: 0 10px;
+        padding: 0 10px; /* Adjust main padding */
     }
 }
 
 @media screen and (max-width: 576px) {
+    /* Styles for screens up to 576px width */
     h1 {
         font-size: 24px;
     }
@@ -38,455 +41,462 @@
         font-size: 16px;
     }
 }
+
+/* Font Definitions */
 @font-face {
     font-family: 'Snickers';
-    src: url('../fonts/snikers.TTF') format('woff2');
+    src: url('../fonts/snikers.TTF') format('woff2'); /* Define Snickers font */
 }
-
-h1, h2, h3 {
-    font-family: 'Snickers', sans-serif;
-    color: #8B4513; 
-}
-
 
 @font-face {
     font-family: 'Word';
-    src: url('../fonts/word.ttf') format('woff2');
-}
-
-p {
-    font-family: 'Word', sans-serif;
-    color: #3d85c6; 
+    src: url('../fonts/word.ttf') format('woff2'); /* Define Word font */
 }
 
 @font-face {
     font-family: 'Willy';
-    src: url('../fonts/willy.ttf') format('woff2');
+    src: url('../fonts/willy.ttf') format('woff2'); /* Define Willy font */
 }
 
-body {
-    font-family: 'Snickers Font', 'Segoe UI', sans-serif;
-    background-color: #FFFACD; 
-    color: #8B4513; 
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
+/* Global Text Styles */
 h1, h2, h3 {
-    text-align: center;
-    margin: 0 0 20px;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 24px;
+    font-family: 'Snickers', sans-serif; /* Apply Snickers font to headings */
+    color: #8B4513; /* Set heading color */
 }
 
 p {
-    margin-bottom: 20px;
-    font-size: 18px;
+    font-family: 'Word', sans-serif; /* Apply Word font to paragraphs */
+    color: #3d85c6; /* Set paragraph color */
 }
 
+body {
+    font-family: 'Snickers Font', 'Segoe UI', sans-serif; /* Set default font family */
+    background-color: #FFFACD; /* Set background color */
+    color: #8B4513; /* Set default text color */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    line-height: 1.6; /* Set line height */
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    text-align: center; /* Center align headings */
+    margin: 0 0 20px; /* Set margin */
+}
+
+h1 {
+    font-size: 36px; /* Set font size for h1 */
+}
+
+h2 {
+    font-size: 24px; /* Set font size for h2 */
+}
+
+/* Paragraph Styles */
+p {
+    margin-bottom: 20px; /* Set margin bottom */
+    font-size: 18px; /* Set font size for paragraphs */
+}
+
+/* Main Content Container Styles */
 main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+    max-width: 1200px; /* Set maximum width */
+    margin: 20px auto; /* Center align and set margin */
+    padding: 0 20px; /* Set padding */
 }
 
+/* Section Styles */
 section {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Set margin bottom for sections */
 }
 
+/* Image Styles */
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 100%; /* Set maximum width for images */
+    height: auto; /* Set auto height for images */
+    display: block; /* Make images block elements */
+    margin: 0 auto; /* Center align images */
 }
 
+/* Footer Styles */
 footer {
-    background-color: #8B4513; 
-    color: #fff; 
-    padding: 20px;
-    text-align: center;
+    background-color: #8B4513; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 20px; /* Set padding */
+    text-align: center; /* Center align text */
 }
 
+/* Logo Styles */
 .logo img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
+    width: 100px; /* Set logo width */
+    height: 100px; /* Set logo height */
+    margin-bottom: 10px; /* Set margin bottom */
 }
 
+/* Company Information Styles */
 .company-info {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Set margin bottom */
 }
 
+/* Contact Form Styles */
 .contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+    max-width: 500px; /* Set maximum width */
+    margin: 0 auto; /* Center align */
+    padding: 20px; /* Set padding */
+    background-color: #fff; /* Set background color */
+    border-radius: 5px; /* Set border radius */
 }
 
 .contact-form h3 {
-    margin-bottom: 10px;
-    color: #8B4513; 
+    margin-bottom: 10px; /* Set margin bottom */
+    color: #8B4513; /* Set text color */
 }
 
 form {
-    display: grid;
-    gap: 10px;
+    display: grid; /* Use grid layout for form */
+    gap: 10px; /* Set gap */
 }
 
 input,
 textarea,
 button {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    width: 100%; /* Set width */
+    padding: 10px; /* Set padding */
+    border-radius: 5px; /* Set border radius */
+    border: 1px solid #ccc; /* Set border */
 }
 
+/* Button Styles */
 button {
-    background-color: #8B4513; 
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    background-color: #8B4513; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Set cursor to pointer */
+    font-weight: bold; /* Set font weight */
+    text-transform: uppercase; /* Set text to uppercase */
+    letter-spacing: 1px; /* Set letter spacing */
 }
 
 button:hover {
-    background-color: #A0522D; 
+    background-color: #A0522D; /* Change background color on hover */
 }
 
+/* Header Styles */
 header {
-    background: linear-gradient(to right, #8B4513, #A0522D); 
-    padding: 20px;
-    text-align: center;
-    border-bottom: 5px solid #FFD700; 
+    background: linear-gradient(to right, #8B4513, #A0522D); /* Set gradient background */
+    padding: 20px; /* Set padding */
+    text-align: center; /* Center align text */
+    border-bottom: 5px solid #FFD700; /* Set border bottom */
 }
 
+/* Navigation Styles */
 ul {
-    font-family: 'Willy';
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    font-family: 'Willy'; /* Apply Willy font to lists */
+    list-style-type: none; /* Remove list style */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
 }
 
 ul li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px; /* Set margin bottom for list items */
 }
 
 ul li a {
-    text-decoration: none; 
-    color: #6f3b12; 
-    font-size: 18px; 
-    transition: color 0.3s ease; 
+    text-decoration: none; /* Remove underline */
+    color: #6f3b12; /* Set link color */
+    font-size: 18px; /* Set font size */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 ul li a:hover {
-    color: #8B4513; 
+    color: #8B4513; /* Change color on hover */
 }
 
+/* Navigation Menu Styles */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+    list-style-type: none; /* Remove list style */
+    padding: 0; /* Reset padding */
+    margin: 20px 0; /* Set margin */
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0;
-    position: relative;
+    display: inline-block; /* Display as inline-block */
+    margin: 0; /* Reset margin */
+    position: relative; /* Set position */
 }
 
 nav ul li:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -5px;
-    bottom: 0;
-    width: 4px;
-    background-color: black;
+    content: ''; /* Add content */
+    position: absolute; /* Set position */
+    top: 0; /* Set top */
+    right: -5px; /* Set right */
+    bottom: 0; /* Set bottom */
+    width: 4px; /* Set width */
+    background-color: black; /* Set background color */
 }
 
 nav ul li a {
-    text-decoration: none;
-    margin: 0 10px;
-    background-color: peachpuff;
-    border-radius: 5px;
-    border: 2px solid #8B4513; 
-    color: #6f3b12;
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Set margin */
+    background-color: peachpuff; /* Set background color */
+    border-radius: 5px; /* Set border radius */
+    border: 2px solid #8B4513; /* Set border */
+    color: #6f3b12; /* Set text color */
 }
 
 nav ul li a:hover {
-    background-color: #8B4513; 
-    color: #fff;
+    background-color: #8B4513; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
 }
 
+/* Slideshow Container Styles */
 .slideshow-container {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
+    background-color: #fff; /* Set background color */
+    border-radius: 10px; /* Set border radius */
+    overflow: hidden; /* Hide overflow */
 }
 
 .slideshow-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%; /* Set width */
+    height: auto; /* Set auto height */
+    object-fit: cover; /* Set object fit */
 }
 
 /* Table Styles */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 40px;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Set width */
+    border-collapse: collapse; /* Collapse border */
+    margin-bottom: 40px; /* Set margin bottom */
+    background-color: #fff; /* Set background color */
+    border-radius: 10px; /* Set border radius */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Set box shadow */
 }
 
 th, td {
-    padding: 15px;
-    border-bottom: 1px solid #8B4513; 
-    font-weight: bold;
+    padding: 15px; /* Set padding */
+    border-bottom: 1px solid #8B4513; /* Set border */
+    font-weight: bold; /* Set font weight */
 }
 
 th {
-    background-color: #8B4513; 
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
+    background-color: #8B4513; /* Set background color */
+    color: #fff; /* Set text color */
+    text-align: center; /* Center align text */
+    text-transform: uppercase; /* Set text to uppercase */
 }
 
 td {
-    color: #5f3521;
+    color: #5f3521; /* Set text color */
 }
 
 tr:nth-child(even) {
-    background-color: #fcf3cd;
+    background-color: #fcf3cd; /* Set background color for even rows */
 }
 
 tr:hover {
-    background-color: #fae6b2;
+    background-color: #fae6b2; /* Change background color on hover */
 }
 
 caption {
-    caption-side: top;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #8B4513;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
+    caption-side: top; /* Set caption side */
+    font-size: 1.2em; /* Set font size */
+    margin-bottom: 10px; /* Set margin bottom */
+    color: #8B4513; /* Set text color */
+    text-align: center; /* Center align text */
+    text-transform: uppercase; /* Set text to uppercase */
+    font-weight: bold; /* Set font weight */
+    letter-spacing: 2px; /* Set letter spacing */
 }
 
+/* Heading Styles for Sections */
 #introduction h2,
 #slideshow h2,
 #picture-series h2,
 #facts h2,
 #nutrition h2 {
-    font-family: 'Snickers', sans-serif; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-family: 'Snickers', sans-serif; /* Apply Snickers font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
+/* Section Container Styles */
 #slideshow,
 #picture-series,
 #facts,
 #nutrition {
-    padding: 40px;
-    border-radius: 10px;
-    color: #8B4513; 
+    padding: 40px; /* Set padding */
+    border-radius: 10px; /* Set border radius */
+    color: #8B4513; /* Set text color */
 }
 
+/* Heading Styles for Section Containers */
 #slideshow h2,
 #picture-series h2,
 #facts h2,
 #nutrition h2 {
-    font-family: 'Snickers';
-    font-size: 50px;
-    color: #8B4513; 
-    text-align: center;
-    margin: 0 0 20px;
+    font-family: 'Snickers'; /* Apply Snickers font */
+    font-size: 50px; /* Set font size */
+    color: #8B4513; /* Set text color */
+    text-align: center; /* Center align text */
+    margin: 0 0 20px; /* Set margin */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
 /* Button Container Styles */
 .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    display: flex; /* Display as flex */
+    justify-content: center; /* Center align content */
+    margin-top: 20px; /* Set margin top */
 }
 
 .button-container button {
-    padding: 12px 25px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 8px;
-    background-color: #8B4513; /* Snickers brown */
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    padding: 12px 25px; /* Set padding */
+    margin: 0 10px; /* Set margin */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Set border radius */
+    background-color: #8B4513; /* Set background color */
+    color: #fff; /* Set text color */
+    cursor: pointer; /* Set cursor to pointer */
+    font-weight: bold; /* Set font weight */
+    text-transform: uppercase; /* Set text to uppercase */
+    letter-spacing: 1px; /* Set letter spacing */
 }
 
 .button-container button:hover {
-    background-color: #A0522D; /* Darker brown on hover */
+    background-color: #A0522D; /* Change background color on hover */
 }
 
 /* Additional CSS styles for the section boxes */
 .section-box {
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Set padding */
+    margin-bottom: 20px; /* Set margin bottom */
+    border-radius: 10px; /* Set border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Set box shadow */
 }
 
 .section-box h2 {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 32px;
-    color: #8B4513; /* Snickers brown */
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    font-family: 'Arial Black', sans-serif; /* Apply Arial Black font */
+    font-size: 32px; /* Set font size */
+    color: #8B4513; /* Set text color */
+    margin-bottom: 20px; /* Set margin bottom */
+    text-transform: uppercase; /* Set text to uppercase */
 }
 
 .section-box p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #3d85c6;
+    font-size: 18px; /* Set font size */
+    line-height: 1.6; /* Set line height */
+    color: #3d85c6; /* Set text color */
 }
 
 .section-box img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 20px;
-    border-radius: 5px;
+    max-width: 100%; /* Set maximum width */
+    height: auto; /* Set auto height */
+    display: block; /* Make block element */
+    margin-top: 20px; /* Set margin top */
+    border-radius: 5px; /* Set border radius */
 }
 
 .section-box img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Scale image on hover */
 }
 
 .section-box ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    color: #5f3521; /* Dark brown */
+    list-style-type: disc; /* Set list style */
+    margin-left: 20px; /* Set margin left */
+    color: #5f3521; /* Set text color */
 }
 
 .section-box a {
-    color: #0066cc;
-    text-decoration: none;
+    color: #0066cc; /* Set link color */
+    text-decoration: none; /* Remove underline */
 }
 
 .section-box a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Add underline on hover */
 }
 
-section {
-    background-color: #FFDAB9; 
-
-}
-
+/* Introduction Section Styles */
 #introduction {
-    font-family: 'Word';
-    background-size: cover;
-    position: relative; 
-    padding: 40px; 
-    border-radius: 10px; 
-    color: #8B4513; 
+    font-family: 'Word'; /* Apply Word font */
+    background-size: cover; /* Set background size */
+    position: relative; /* Set position */
+    padding: 40px; /* Set padding */
+    border-radius: 10px; /* Set border radius */
+    color: #8B4513; /* Set text color */
 }
 
 #introduction h1 {
-    font-family: 'Snickers';
-    animation: slideInDown 1s ease forwards;
-    margin-bottom: 20px; 
-    color: #8B4513; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-family: 'Snickers'; /* Apply Snickers font */
+    animation: slideInDown 1s ease forwards; /* Set animation */
+    margin-bottom: 20px; /* Set margin bottom */
+    color: #8B4513; /* Set text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
 #introduction p {
-    animation: fadeInUp 1.5s ease forwards;
-    margin-bottom: 20px; 
-    color: #3d85c6; 
+    animation: fadeInUp 1.5s ease forwards; /* Set animation */
+    margin-bottom: 20px; /* Set margin bottom */
+    color: #3d85c6; /* Set text color */
 }
 
-#introduction h2,
-#slideshow h2,
-#picture-series h2,
-#facts h2,
-#nutrition h2 {
-    font-family: 'Snickers';
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-}
-
+/* Additional Media Queries */
 @media screen and (max-width: 768px) {
     /* Adjust styles for screens smaller than 768px width */
     main {
-        padding: 0 10px;
+        padding: 0 10px; /* Adjust main padding */
     }
 
     .contact-form {
-        max-width: 100%;
+        max-width: 100%; /* Set maximum width for contact form */
     }
 
     .button-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center align items */
     }
 
     .button-container button {
-        margin: 10px 0;
+        margin: 10px 0; /* Set margin */
     }
 }
 
 @media screen and (max-width: 576px) {
     /* Adjust styles for screens smaller than 576px width */
     h1 {
-        font-size: 28px;
+        font-size: 28px; /* Set font size for h1 */
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 20px; /* Set font size for h2 */
     }
 
     p {
-        font-size: 16px;
+        font-size: 16px; /* Set font size for paragraphs */
     }
 
     .logo img {
-        width: 80px;
-        height: 80px;
+        width: 80px; /* Set logo width */
+        height: 80px; /* Set logo height */
     }
 
     .company-info,
     .section-box {
-        padding: 10px;
+        padding: 10px; /* Set padding */
     }
 
     .section-box h2 {
-        font-size: 24px;
+        font-size: 24px; /* Set font size for section box headings */
     }
 
     .section-box p {
-        font-size: 16px;
+        font-size: 16px; /* Set font size for section box paragraphs */
     }
 
     .section-box img {
-        margin-top: 10px;
+        margin-top: 10px; /* Set margin top for images */
     }
 
     .section-box ul {
-        margin-left: 15px;
+        margin-left: 15px; /* Set margin left for lists */
     }
 }
