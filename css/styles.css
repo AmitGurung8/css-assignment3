@@ -1,0 +1,492 @@
+/* Global Styles */
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+@font-face {
+    font-family: 'Snickers';
+    src: url('../fonts/snikers.TTF') format('woff2');
+}
+
+h1, h2, h3 {
+    font-family: 'Snickers', sans-serif;
+    color: #8B4513; 
+}
+
+
+@font-face {
+    font-family: 'Word';
+    src: url('../fonts/word.ttf') format('woff2');
+}
+
+p {
+    font-family: 'Word', sans-serif;
+    color: #3d85c6; 
+}
+
+@font-face {
+    font-family: 'Willy';
+    src: url('../fonts/willy.ttf') format('woff2');
+}
+
+body {
+    font-family: 'Snickers Font', 'Segoe UI', sans-serif;
+    background-color: #FFFACD; 
+    color: #8B4513; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #8B4513; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.company-info {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+    color: #8B4513; 
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #8B4513; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #A0522D; 
+}
+
+header {
+    background: linear-gradient(to right, #8B4513, #A0522D); 
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #FFD700; 
+}
+
+ul {
+    font-family: 'Willy';
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px; 
+}
+
+ul li a {
+    text-decoration: none; 
+    color: #6f3b12; 
+    font-size: 18px; 
+    transition: color 0.3s ease; 
+}
+
+ul li a:hover {
+    color: #8B4513; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+
+nav ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    bottom: 0;
+    width: 4px;
+    background-color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    background-color: peachpuff;
+    border-radius: 5px;
+    border: 2px solid #8B4513; 
+    color: #6f3b12;
+}
+
+nav ul li a:hover {
+    background-color: #8B4513; 
+    color: #fff;
+}
+
+.slideshow-container {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slideshow-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #8B4513; 
+    font-weight: bold;
+}
+
+th {
+    background-color: #8B4513; 
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+td {
+    color: #5f3521;
+}
+
+tr:nth-child(even) {
+    background-color: #fcf3cd;
+}
+
+tr:hover {
+    background-color: #fae6b2;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #8B4513;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#introduction h2,
+#slideshow h2,
+#picture-series h2,
+#facts h2,
+#nutrition h2 {
+    font-family: 'Snickers', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+#slideshow,
+#picture-series,
+#facts,
+#nutrition {
+    padding: 40px;
+    border-radius: 10px;
+    color: #8B4513; 
+}
+
+#slideshow h2,
+#picture-series h2,
+#facts h2,
+#nutrition h2 {
+    font-family: 'Snickers';
+    font-size: 50px;
+    color: #8B4513; 
+    text-align: center;
+    margin: 0 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8B4513; /* Snickers brown */
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.button-container button:hover {
+    background-color: #A0522D; /* Darker brown on hover */
+}
+
+/* Additional CSS styles for the section boxes */
+.section-box {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-box h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 32px;
+    color: #8B4513; /* Snickers brown */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #3d85c6;
+}
+
+.section-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.section-box img:hover {
+    transform: scale(1.1);
+}
+
+.section-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #5f3521; /* Dark brown */
+}
+
+.section-box a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.section-box a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: #FFDAB9; 
+
+}
+
+#introduction {
+    font-family: 'Word';
+    background-size: cover;
+    position: relative; 
+    padding: 40px; 
+    border-radius: 10px; 
+    color: #8B4513; 
+}
+
+#introduction h1 {
+    font-family: 'Snickers';
+    animation: slideInDown 1s ease forwards;
+    margin-bottom: 20px; 
+    color: #8B4513; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+#introduction p {
+    animation: fadeInUp 1.5s ease forwards;
+    margin-bottom: 20px; 
+    color: #3d85c6; 
+}
+
+#introduction h2,
+#slideshow h2,
+#picture-series h2,
+#facts h2,
+#nutrition h2 {
+    font-family: 'Snickers';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px width */
+    main {
+        padding: 0 10px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-container button {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Adjust styles for screens smaller than 576px width */
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .company-info,
+    .section-box {
+        padding: 10px;
+    }
+
+    .section-box h2 {
+        font-size: 24px;
+    }
+
+    .section-box p {
+        font-size: 16px;
+    }
+
+    .section-box img {
+        margin-top: 10px;
+    }
+
+    .section-box ul {
+        margin-left: 15px;
+    }
+}
